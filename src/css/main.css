@@ -648,8 +648,14 @@ main {
 
 /*BEAKPOINTS*/
 @media only screen and (min-width: 250px) and (max-width: 999px) {
+  header {
+    flex-direction: column;
+  }
   header a img {
     width: 100%;
+  }
+  header form {
+    padding-right: 0;
   }
   main {
     margin: 0 1rem;
