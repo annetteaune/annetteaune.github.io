@@ -12,11 +12,14 @@ import Forskning from "./components/Forskning";
 import OmHiof from "./components/OmHiof";
 import Grupperom from "./components/Grupperom";
 import Timeplan from "./components/Timeplan";
+import { useState } from "react";
 
 function App() {
+	//state for meny på mobil
+	const [isActive, setIsActive] = useState(false);
 	return (
 		<Routes>
-			<Route path="/" element={<Layout />}>
+			<Route path="/" element={<Layout setIsActive={setIsActive} isActive={isActive} />}>
 				<Route index element={<Main />} />
 				<Route path="/for-studenter" element={<ForStudents />} />
 				<Route path="/for-ansatte" element={<Ansatte />} />

@@ -665,6 +665,9 @@ main {
   }
   .menus {
     padding: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    display: none;
   }
   .front-page-slides div {
     align-items: inherit;
@@ -674,6 +677,9 @@ main {
   }
   .faculty article p {
     max-width: 100%;
+  }
+  .aktuelt img {
+    width: 70%;
   }
   footer {
     padding: 0.5rem;
@@ -698,6 +704,25 @@ main {
   }
   .stud-container .links-student-container {
     margin: 0 auto;
+  }
+}
+.hide {
+  display: block;
+  list-style: none;
+}
+
+.menu-btn {
+  background-color: #006d77;
+  border: none;
+  color: white;
+  padding: 0.4rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 999px) {
+  .menu-btn {
+    display: none;
   }
 }
 
