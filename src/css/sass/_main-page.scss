@@ -1,0 +1,160 @@
+.front-page-slides {
+	margin: 0 -5rem;
+	img {
+		display: block;
+		width: 100%;
+	}
+	.fotograf-forside {
+		font-size: 0.4rem;
+		background: rgba(255, 255, 255, 0.65);
+		margin-top: -0.45rem;
+		position: absolute;
+	}
+	div {
+		display: flex;
+
+		width: 100%;
+		justify-content: space-evenly;
+		align-items: end;
+		.study-btn {
+			padding: 0.73rem;
+			width: 50%;
+			//box-shadow: 5px 5px 10px #37353552;
+			background-color: white;
+
+			border: none;
+			font-size: 0.7rem;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.faculty {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 1rem 0;
+
+	h3 {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 1rem;
+		margin: 0.3rem auto;
+	}
+	article {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		gap: 1rem;
+		p {
+			color: white;
+			font-size: 0.6rem;
+			max-width: 20%;
+			padding: 0.5rem;
+			background-color: #006d77;
+			display: flex;
+			align-items: center;
+			&:hover {
+				text-decoration: underline;
+			}
+			.fa-solid {
+				display: block;
+				color: white;
+				font-size: 1rem;
+				padding: 1rem;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.aktuelt {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 0 auto;
+	justify-content: space-evenly;
+	img {
+		max-width: 250px;
+		height: fit-content;
+		width: fit-content;
+	}
+	h3 {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 1rem;
+		margin: 0.5rem auto;
+	}
+	article {
+		display: flex;
+		max-width: 450px;
+		width: 100%;
+		background-color: white;
+		padding: 0 1rem 0 0;
+		gap: 1rem;
+
+		div {
+			flex-direction: column;
+			display: flex;
+			font-size: 0.6rem;
+			h4 {
+				font-size: 0.8rem;
+				margin: 0.1rem 0;
+			}
+		}
+		button {
+			background-color: $buttons;
+			color: white;
+			border: none;
+			padding: 0.2rem;
+			font-size: 0.6rem;
+		}
+	}
+}
+
+.calendar {
+	h3 {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 1rem;
+		margin: 0.5rem auto;
+	}
+	a {
+		text-decoration: none;
+		text-align: center;
+		font-size: 0.8rem;
+		margin-top: -0.9rem;
+		margin-bottom: 2rem;
+		color: white;
+		background-color: $buttons;
+		padding: 0.2rem;
+	}
+	img {
+		max-width: 100%;
+	}
+}
+
+.akademiske-arrangementer {
+	h3 {
+		text-align: center;
+		margin: 0.5rem auto;
+	}
+	img {
+		width: 100%;
+	}
+	a {
+		i {
+			color: white;
+		}
+		font-size: 0.8rem;
+		text-decoration: none;
+		color: white;
+		background-color: $buttons;
+		padding: 0.2rem;
+	}
+}

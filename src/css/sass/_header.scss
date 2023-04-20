@@ -1,0 +1,27 @@
+header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	a {
+		img {
+			width: 70%;
+		}
+	}
+
+	form {
+		display: flex;
+		height: fit-content;
+		padding-right: 2rem;
+		input {
+			width: 11rem;
+			font-size: 0.8rem;
+		}
+		button {
+			background-color: $buttons;
+			color: white;
+			border: none;
+			font-size: 0.8rem;
+		}
+	}
+}

@@ -1,0 +1,90 @@
+footer {
+	background-color: white;
+	display: flex;
+	padding: 0.5rem 8rem;
+	justify-content: space-between;
+	margin-top: 2rem;
+	flex-direction: column;
+
+	.contact-header {
+		font-size: 0.8rem;
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+	}
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		font-size: 0.7rem;
+		span {
+			padding-bottom: 0.3rem;
+		}
+
+		button {
+			margin-top: 1rem;
+			background-color: white;
+			color: black;
+			font-size: 0.8rem;
+			text-decoration: underline;
+			border: none;
+
+			&:hover {
+				background-color: $buttons;
+				color: white;
+			}
+		}
+	}
+
+	.footercontent {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.fullinfo {
+		color: black;
+		text-decoration: underline;
+		&:hover {
+			background-color: $buttons;
+			color: white;
+		}
+	}
+	.socials-header {
+		font-size: 0.8rem;
+		font-weight: bold;
+		margin-bottom: 0.8rem;
+	}
+
+	.socials {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 0;
+
+		div {
+			display: flex;
+			font-size: 1.7rem;
+			gap: 0.8rem;
+			justify-content: end;
+			.fa-square-facebook {
+				color: rgb(55, 82, 218);
+			}
+			.fa-square-twitter {
+				color: rgb(49, 148, 173);
+			}
+			.fa-square-instagram {
+				color: rgb(26, 80, 82);
+			}
+			.fa-linkedin {
+				color: rgb(24, 78, 184);
+			}
+			.fa-square-youtube {
+				color: red;
+			}
+		}
+	}
+	.footerimg {
+		max-width: 350px;
+		padding: 0.2rem 0.5rem;
+	}
+}

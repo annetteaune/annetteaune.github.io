@@ -1,0 +1,50 @@
+.studieretninger {
+	ul {
+		display: flex;
+		list-style: none;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
+		li {
+			font-size: 0.7rem;
+			padding: 1rem;
+			background-color: $footercolor;
+		}
+	}
+}
+
+.omhiof{
+    h3{
+        text-align: center;
+    }
+    article{
+        display: flex;
+       section{
+         padding-left: 1rem;
+         p{
+            font-size: 0.8rem;
+         }
+       }
+    }
+}
+
+.grupperom{
+  
+    max-width: 100%;
+}
+
+.timeplanimg{
+    max-width: 100%;
+}
+
+.omhiof-img{
+    width: 500px;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    span{
+        font-size: 0.4rem;
+    }
+}

@@ -1,0 +1,42 @@
+h2 {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1rem;
+	font-size: 1rem;
+}
+.contact-wrapper {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem;
+	article {
+		display: flex;
+		flex-direction: column;
+		font-size: 0.7rem;
+	}
+}
+
+.map {
+	display: flex;
+	justify-content: center;
+	iframe {
+		width: 800px;
+		height: 500px;
+	}
+}
+
+
+.enheter{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-top: 1rem;
+    margin-top: 2rem;
+.enheterimg {
+	width: 850px;
+}
+}
+

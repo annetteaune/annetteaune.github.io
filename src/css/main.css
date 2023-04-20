@@ -1,0 +1,692 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+.breadcrumb {
+  font-size: 0.6rem;
+  margin-left: 1rem;
+}
+
+/*css-en under er stort sett hentet direkte fra navbar-tutorialen, så det er k a o s mtp sass-stuktur.
+ kommenterer på de forskellige klassene for å holde styr på hva de gjør*/
+.menus {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+  padding: 0 8rem;
+}
+
+.menu-items {
+  position: relative;
+  font-size: 0.65rem;
+}
+
+.menu-items a {
+  display: block;
+  font-size: 0.7rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-items button {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+button span {
+  margin-left: 3px;
+}
+
+.menu-items > a,
+.menu-items button {
+  text-align: left;
+  padding: 0.5rem 0.7rem;
+}
+
+.menu-items a:hover,
+.menu-items button:hover {
+  background-color: #edf6f9;
+  text-decoration: underline;
+}
+
+.arrow::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.28em;
+  vertical-align: 0.09em;
+  border-top: 0.42em solid;
+  border-right: 0.32em solid transparent;
+  border-left: 0.32em solid transparent;
+}
+
+.dropdown {
+  position: absolute;
+  right: auto;
+  left: 0;
+  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08), 0 4px 6px -2px rgba(71, 63, 79, 0.16);
+  font-size: 0.2rem;
+  z-index: 9999;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  list-style: none;
+  background-color: white;
+  display: none;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+.dropdown .dropdown-submenu {
+  position: absolute;
+  left: 100%;
+  top: -7px;
+  display: none;
+}
+
+.dropdown .dropdown-submenu.show {
+  display: block;
+}
+
+.front-page-slides {
+  margin: 0 -5rem;
+}
+.front-page-slides img {
+  display: block;
+  width: 100%;
+}
+.front-page-slides .fotograf-forside {
+  font-size: 0.4rem;
+  background: rgba(255, 255, 255, 0.65);
+  margin-top: -0.45rem;
+  position: absolute;
+}
+.front-page-slides div {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: end;
+}
+.front-page-slides div .study-btn {
+  padding: 0.73rem;
+  width: 50%;
+  background-color: white;
+  border: none;
+  font-size: 0.7rem;
+}
+.front-page-slides div .study-btn:hover {
+  text-decoration: underline;
+}
+
+.faculty {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
+}
+.faculty h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.3rem auto;
+}
+.faculty article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.faculty article p {
+  color: white;
+  font-size: 0.6rem;
+  max-width: 20%;
+  padding: 0.5rem;
+  background-color: #006d77;
+  display: flex;
+  align-items: center;
+}
+.faculty article p:hover {
+  text-decoration: underline;
+}
+.faculty article p .fa-solid {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.aktuelt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.aktuelt img {
+  max-width: 250px;
+  height: fit-content;
+  width: fit-content;
+}
+.aktuelt h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.5rem auto;
+}
+.aktuelt article {
+  display: flex;
+  max-width: 450px;
+  width: 100%;
+  background-color: white;
+  padding: 0 1rem 0 0;
+  gap: 1rem;
+}
+.aktuelt article div {
+  flex-direction: column;
+  display: flex;
+  font-size: 0.6rem;
+}
+.aktuelt article div h4 {
+  font-size: 0.8rem;
+  margin: 0.1rem 0;
+}
+.aktuelt article button {
+  background-color: #006d77;
+  color: white;
+  border: none;
+  padding: 0.2rem;
+  font-size: 0.6rem;
+}
+
+.calendar h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.5rem auto;
+}
+.calendar a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: -0.9rem;
+  margin-bottom: 2rem;
+  color: white;
+  background-color: #006d77;
+  padding: 0.2rem;
+}
+.calendar img {
+  max-width: 100%;
+}
+
+.akademiske-arrangementer h3 {
+  text-align: center;
+  margin: 0.5rem auto;
+}
+.akademiske-arrangementer img {
+  width: 100%;
+}
+.akademiske-arrangementer a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+  background-color: #006d77;
+  padding: 0.2rem;
+}
+.akademiske-arrangementer a i {
+  color: white;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  padding: 0.5rem 8rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+footer .contact-header {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+footer .contact span {
+  padding-bottom: 0.3rem;
+}
+footer .contact button {
+  margin-top: 1rem;
+  background-color: white;
+  color: black;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  border: none;
+}
+footer .contact button:hover {
+  background-color: #006d77;
+  color: white;
+}
+footer .footercontent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .fullinfo {
+  color: black;
+  text-decoration: underline;
+}
+footer .fullinfo:hover {
+  background-color: #006d77;
+  color: white;
+}
+footer .socials-header {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+footer .socials {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+footer .socials div {
+  display: flex;
+  font-size: 1.7rem;
+  gap: 0.8rem;
+  justify-content: end;
+}
+footer .socials div .fa-square-facebook {
+  color: rgb(55, 82, 218);
+}
+footer .socials div .fa-square-twitter {
+  color: rgb(49, 148, 173);
+}
+footer .socials div .fa-square-instagram {
+  color: rgb(26, 80, 82);
+}
+footer .socials div .fa-linkedin {
+  color: rgb(24, 78, 184);
+}
+footer .socials div .fa-square-youtube {
+  color: red;
+}
+footer .footerimg {
+  max-width: 350px;
+  padding: 0.2rem 0.5rem;
+}
+
+.students-menu {
+  display: flex;
+  background-image: url(https://images.unsplash.com/photo-1515125520141-3e3b67bc0a88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80);
+  background-position-y: -16rem;
+  justify-content: center;
+  height: 200px;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 0 -5rem;
+}
+.students-menu .students-list {
+  display: flex;
+  list-style: none;
+}
+.students-menu .students-list a {
+  text-decoration: none;
+  text-align: center;
+}
+.students-menu .students-list a li {
+  height: 50px;
+  width: 304px;
+  font-size: 0.7rem;
+  border: none;
+  background-color: white;
+  color: #006d77;
+  text-decoration: none;
+  margin: 0 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.students-menu .students-list a li:hover {
+  text-decoration: underline;
+}
+
+.stud-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.links-student-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.links-student-container .shortcuts,
+.links-student-container .profile {
+  max-width: 550px;
+  max-height: 600px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 1rem;
+}
+.links-student-container .shortcuts .login-btn,
+.links-student-container .profile .login-btn {
+  height: 60px;
+  width: 250px;
+  font-size: 0.7rem;
+  border: none;
+  background-color: #edf6f9;
+  color: #023337;
+  margin: 0 auto;
+  border: 1px solid #006d77;
+}
+.links-student-container .shortcuts .login-btn:hover,
+.links-student-container .profile .login-btn:hover {
+  text-decoration: underline;
+}
+.links-student-container .shortcuts h4,
+.links-student-container .profile h4 {
+  padding-top: 1.2rem;
+  padding-bottom: 0.5rem;
+  color: #023337;
+  margin: 0 auto;
+}
+.links-student-container .shortcuts ul,
+.links-student-container .profile ul {
+  display: flex;
+  flex-direction: column;
+}
+.links-student-container .shortcuts ul a,
+.links-student-container .profile ul a {
+  text-decoration: none;
+}
+.links-student-container .shortcuts ul li,
+.links-student-container .profile ul li {
+  list-style: none;
+  color: black;
+  font-size: 0.8rem;
+  padding-bottom: 0.6rem;
+  margin-right: 2rem;
+}
+.links-student-container .shortcuts ul li:hover,
+.links-student-container .profile ul li:hover {
+  background-color: #edf6f9;
+  text-decoration: underline;
+}
+.links-student-container .shortcuts span,
+.links-student-container .profile span {
+  color: black;
+  text-decoration: underline;
+  font-size: 0.8rem;
+}
+
+.fa-chevron-right {
+  font-size: 0.6rem;
+  margin-left: 0.1rem;
+  color: #006d77;
+}
+
+.oversikt {
+  width: 100%;
+  background-color: white;
+  padding: 0.6rem;
+  margin-top: 1rem;
+}
+.oversikt div {
+  display: flex;
+  padding: 0.5rem;
+}
+.oversikt div .timeplan {
+  width: 48%;
+  margin-right: 2%;
+}
+.oversikt div .timeplan h4 {
+  font-size: 0.75rem;
+  margin: 0.2rem auto;
+}
+.oversikt div .timeplan .emne-oversikt {
+  display: flex;
+  flex-direction: column;
+}
+.oversikt div .timeplan .emne-oversikt span {
+  font-size: 0.6rem;
+}
+.oversikt div .timeplan .emne-oversikt .emne {
+  font-weight: bold;
+}
+.oversikt div .innleveringer {
+  margin-left: 2%;
+  width: 48%;
+}
+.oversikt div .innleveringer h4 {
+  font-size: 0.75rem;
+  margin: 0.2rem auto;
+}
+.oversikt div .innleveringer .emne-oversikt {
+  display: flex;
+  flex-direction: column;
+}
+.oversikt div .innleveringer .emne-oversikt span {
+  font-size: 0.6rem;
+}
+.oversikt div .innleveringer .emne-oversikt .emne {
+  font-weight: bold;
+}
+
+.color1 {
+  background-color: #aecac7;
+}
+
+.color2 {
+  background-color: #edf6f9;
+}
+
+.more-btn {
+  background-color: #006d77;
+  color: white;
+  font-size: 0.6rem;
+  border: none;
+  padding: 0.3rem;
+  width: 33%;
+  margin: 0.2rem 33%;
+}
+
+.delivered {
+  color: green;
+}
+
+.not-delivered {
+  color: red;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header a img {
+  width: 70%;
+}
+header form {
+  display: flex;
+  height: fit-content;
+  padding-right: 2rem;
+}
+header form input {
+  width: 11rem;
+  font-size: 0.8rem;
+}
+header form button {
+  background-color: #006d77;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+}
+
+h2 {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.contact-wrapper article {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+}
+.map iframe {
+  width: 800px;
+  height: 500px;
+}
+
+.enheter {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+.enheter .enheterimg {
+  width: 850px;
+}
+
+.studieretninger ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.studieretninger ul li {
+  font-size: 0.7rem;
+  padding: 1rem;
+  background-color: #aecac7;
+}
+
+.omhiof h3 {
+  text-align: center;
+}
+.omhiof article {
+  display: flex;
+}
+.omhiof article section {
+  padding-left: 1rem;
+}
+.omhiof article section p {
+  font-size: 0.8rem;
+}
+
+.grupperom {
+  max-width: 100%;
+}
+
+.timeplanimg {
+  max-width: 100%;
+}
+
+.omhiof-img {
+  width: 500px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+}
+.img-container span {
+  font-size: 0.4rem;
+}
+
+body {
+  background-color: #edf6f9;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+}
+
+main {
+  margin: 0 5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*BEAKPOINTS*/
+@media only screen and (min-width: 250px) and (max-width: 999px) {
+  header a img {
+    width: 100%;
+  }
+  main {
+    margin: 0 1rem;
+  }
+  .menus {
+    padding: 0;
+  }
+  .front-page-slides div {
+    align-items: inherit;
+  }
+  .faculty article {
+    flex-direction: column;
+  }
+  .faculty article p {
+    max-width: 100%;
+  }
+  footer {
+    padding: 0.5rem;
+  }
+  footer .socials div {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .students-menu {
+    height: 250px;
+  }
+  .students-menu .students-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .stud-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .stud-container .links-student-container {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

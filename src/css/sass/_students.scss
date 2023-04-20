@@ -1,0 +1,183 @@
+.students-menu {
+	display: flex;
+	background-image: url(https://images.unsplash.com/photo-1515125520141-3e3b67bc0a88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80);
+	background-position-y: -16rem;
+	justify-content: center;
+	height: 200px;
+	align-items: center;
+	padding: 0 2rem;
+	margin: 0 -5rem;
+	.students-list {
+		display: flex;
+		list-style: none;
+		a {
+			text-decoration: none;
+			text-align: center;
+			li {
+				height: 50px;
+				width: 304px;
+				font-size: 0.7rem;
+				border: none;
+				background-color: white;
+				color: $buttons;
+				text-decoration: none;
+				margin: 0 1rem 0 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.stud-container{
+display: flex;
+justify-content: space-between;
+width: 1200px;
+}
+
+.links-student-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: baseline;
+
+	.shortcuts,
+	.profile {
+		max-width: 550px;
+		
+		max-height: 600px;
+		margin: 0 auto;
+		margin-top: 1rem;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		padding: 0 1rem 1rem;
+
+		.login-btn {
+			height: 60px;
+			width: 250px;
+			font-size: 0.7rem;
+			border: none;
+			background-color: $background;
+			color: $headercolor;
+			margin: 0 auto;
+			border: 1px solid $buttons;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		h4 {
+			padding-top: 1.2rem;
+			padding-bottom: 0.5rem;
+			color: $headercolor;
+			margin: 0 auto;
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			a {
+				text-decoration: none;
+			}
+			li {
+				list-style: none;
+				color: black;
+
+				font-size: 0.8rem;
+				padding-bottom: 0.6rem;
+				margin-right: 2rem;
+				&:hover {
+					background-color: $background;
+					text-decoration: underline;
+				}
+			}
+		}
+		span {
+			color: black;
+			text-decoration: underline;
+			font-size: 0.8rem;
+		}
+	}
+}
+
+.fa-chevron-right {
+	font-size: 0.6rem;
+	margin-left: 0.1rem;
+	color: $buttons;
+}
+
+.oversikt {
+	width: 100%;
+	background-color: white;
+	padding: 0.6rem;
+	margin-top: 1rem;
+
+	div {
+		display: flex;
+		padding: 0.5rem;
+		.timeplan {
+			width: 48%;
+			margin-right: 2%;
+			h4 {
+				font-size: 0.75rem;
+				margin: 0.2rem auto;
+			}
+			.emne-oversikt {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					font-size: 0.6rem;
+				}
+				.emne {
+					font-weight: bold;
+				}
+			}
+		}
+		.innleveringer {
+			margin-left: 2%;
+			width: 48%;
+			h4 {
+				font-size: 0.75rem;
+				margin: 0.2rem auto;
+			}
+			.emne-oversikt {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					font-size: 0.6rem;
+				}
+				.emne {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.color1 {
+	background-color: $footercolor;
+}
+.color2 {
+	background-color: $background;
+}
+
+.more-btn {
+	background-color: $buttons;
+	color: white;
+	font-size: 0.6rem;
+	border: none;
+	padding: 0.3rem;
+	width: 33%;
+	margin: 0.2rem 33%;
+}
+
+.delivered {
+	color: green;
+}
+.not-delivered {
+	color: red;
+}
