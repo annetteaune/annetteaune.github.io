@@ -271,7 +271,7 @@ export const menuItems = [
 				submenu: [
 					{
 						title: "Grupperom",
-						url: "book-grupperom",
+						url: "for-studenter/book-grupperom",
 					},
 					{
 						title: "Studieveiledning",
