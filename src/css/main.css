@@ -369,6 +369,7 @@ footer .footerimg {
   display: flex;
   justify-content: space-between;
   width: 1200px;
+  margin: 0 auto;
 }
 
 .links-student-container {
@@ -723,6 +724,12 @@ main {
 @media only screen and (min-width: 999px) {
   .menu-btn {
     display: none;
+  }
+  .aktuelt article {
+    max-width: 650px;
+  }
+  .profile {
+    max-height: 1000px;
   }
 }
 
