@@ -50,7 +50,6 @@ main {
 		align-items: flex-start;
 		flex-direction: column;
 		display: none;
-		
 	}
 	.front-page-slides div {
 		align-items: inherit;
@@ -64,8 +63,8 @@ main {
 			}
 		}
 	}
-	.aktuelt{
-		img{
+	.aktuelt {
+		img {
 			width: 70%;
 		}
 	}
@@ -77,7 +76,7 @@ main {
 				align-items: flex-end;
 			}
 		}
-		.footerimg{
+		.footerimg {
 			padding: 0;
 		}
 	}
@@ -95,11 +94,12 @@ main {
 			margin: 0 auto;
 		}
 	}
-}.hide{
+}
+.hide {
 	display: block;
 	list-style: none;
 }
-.menu-btn{
+.menu-btn {
 	background-color: $buttons;
 	border: none;
 	color: white;
@@ -109,15 +109,15 @@ main {
 }
 
 @media only screen and (min-width: 999px) {
-	.menu-btn{
+	.menu-btn {
 		display: none;
 	}
-	.aktuelt{
-		article{
+	.aktuelt {
+		article {
 			max-width: 650px;
 		}
 	}
-	.profile{
+	.profile {
 		max-height: 1000px;
 	}
 }
