@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" media="all" />
+		<title>Zoomies</title>
+	</head>
+	<body>
+		<header>
+			<!--<audio autoplay src="audio/large-crash-with-cataiff-14490.mp3" type="audio/mpeg"></audio>-->
+			<h1> You've got the zoomies!</h1>
+			<ul>
+				<li>Zoomie timer: <span id="time">30</span></li>
+                <li><button id="playBtn" onclick="playGame()">Play!</button></li>
+				<li>Havoc Wreaked: <span id="points">0</span></li>
+			</ul>
+		</header>
+		<main>
+			<audio autoplay src="audio/large-crash-with-cataiff-14490.mp3" type="audio/mpeg"></audio>
+			<canvas id="canvasarea"> </canvas>
+		</main>
+		<section>
+		<img src="images/note.png" alt="">
+			
+			
+		</section>
+		<aside>
+			<h2>Annoy-o-meter</h2>
+			<img id="portrait" src="images/portrait1.png" alt="">
+			<button id="reloadBtn" onclick="location.reload()"> Try again!  </button>
+			
+		</aside>
+		<footer>
+			<a href="https://www.spriters-resource.com/pc_computer/stardewvalley/">Sprite credit</a> --- 
+			Sound Effects from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=14490">Pixabay</a>
+		</footer>
+
+		<script src="js/js.js"></script>
+	</body>
+</html>

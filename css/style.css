@@ -1,0 +1,105 @@
+@font-face {
+	font-family: katto;
+	src: url("../font/katto-personal-use.outline.otf");
+	/* https://www.1001fonts.com/katto-personal-use-font.html*/
+}
+
+@font-face {
+	font-family: meow;
+	src: url("../font/meoowly.regular.ttf");
+	/* https://www.1001fonts.com/meoowly-font.html */
+}
+
+body {
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	font-family: meow;
+	color: white;
+	font-size: 55px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: meow;
+	color: wheat;
+	font-size: 50px;
+    margin-bottom: auto;
+}
+
+header ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-bottom: 0;
+}
+header ul li {
+	font-family: meow;
+	color: wheat;
+	font-size: 30px;
+	padding-right: 50px;
+}
+
+canvas {
+	background-image: url(../images/backgr.png);
+	border-style: solid;
+	border-color: #5b2b2a;
+}
+
+aside {
+	position: absolute;
+	width: 200px;
+	top: 120px;
+	right: 40px;
+	display: flex;
+	flex-direction: column;
+}
+aside h2 {
+	font-size: 34px;
+}
+#annoyance {
+	font-family: meow;
+	color: white;
+	font-size: 30px;
+}
+section img {
+	position: absolute;
+	top: 100px;
+	left: 20px;
+}
+
+button {
+	background-color: #ffcb52;
+	font-family: meow;
+	font-size: 40px;
+	border-style: solid;
+	border-color: #d07505;
+	border-radius: 10px;
+	border-width: 5px;
+	margin-bottom: 5px;
+	box-shadow: 3px 3px #5b2b2a;
+}
+
+button:hover {
+	outline: none;
+	color: #5b2b2a;
+}
+
+footer {
+	font-family: meow;
+	color: white;
+	font-size: 20px;
+}
+footer a {
+	color: white;
+}
+
+#reloadBtn {
+    margin-top: 10px;
+}
